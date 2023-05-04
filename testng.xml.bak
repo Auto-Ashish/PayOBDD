@@ -6,6 +6,7 @@
             <class name="AbstractComponents.Baseclass">
                 <methods>
                     <include name="setup"/>
+
                 </methods>
             </class>
             <class name="LoginTest">
