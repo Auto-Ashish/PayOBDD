@@ -1,2 +1,6 @@
+resources\ExtentReporter.class
+PageObject\Dashboard.class
 PageObject\LoginPage.class
 AbstractComponents\Baseclass.class
+AbstractComponents\WaitTime.class
+PageObject\SaleOrder.class

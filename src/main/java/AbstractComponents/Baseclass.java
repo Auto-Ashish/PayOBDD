@@ -12,13 +12,12 @@ import java.time.Duration;
 public class Baseclass {
 
     public static WebDriver driver;
-
     public  static String baseURL = "https://app.payobank.in/";
 
 
 
-    @BeforeMethod
-    public void setup() {
+
+    public static void setup() {
 
         driver = new EdgeDriver();
         driver.manage().window().maximize();

@@ -1,10 +1,14 @@
 package PageObject;
 
-import org.openqa.selenium.By;
+import AbstractComponents.Baseclass;
+import com.sun.net.httpserver.Authenticator;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.annotations.Listeners;
+
+import static AbstractComponents.Baseclass.driver;
 
 
 public class LoginPage {
@@ -13,7 +17,7 @@ public class LoginPage {
         PageFactory.initElements(driver, this);
     }
 
-
+LoginPage loginPage;
     // LOGIN PAGE WEB ELEMENTS
         // MOBILE NUMBER TEXTBOX
     @FindBy(xpath = "//div/input[@placeholder = 'Enter mobile number']")
@@ -98,6 +102,24 @@ public class LoginPage {
     }
 
 
+public void Load_Login_Page(){
 
+
+        driver.get(Baseclass.baseURL+"login");
+
+
+    }
+
+
+    public SaleOrder loginToApp(String user, String password){
+
+        getTxtMobileLoginPage().sendKeys(user);
+        getTxtPasswordLoginPage().sendKeys(password);
+        getBtnLogin().click();
+       return new SaleOrder(driver);
+
+    }
 
 }
+
+

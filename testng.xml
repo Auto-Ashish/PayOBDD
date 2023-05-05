@@ -3,16 +3,8 @@
 <suite name="All Test Suite">
     <test verbose="2" preserve-order="true" name="C:/Users/lenovo/Downloads/SeleniumFrameworkDesign/PayO">
         <classes>
-            <class name="AbstractComponents.Baseclass">
-                <methods>
-                    <include name="setup"/>
-                </methods>
-            </class>
-            <class name="LoginTest">
-                <methods>
-                    <include name="Login"/>
-                    <exclude name="Signup"></exclude>
-                </methods>
+            <class name="Features.TestRunnerClass">
+
             </class>
         </classes>
     </test>

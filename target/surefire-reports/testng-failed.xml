@@ -3,12 +3,13 @@
 <suite name="Failed suite [All Test Suite]" guice-stage="DEVELOPMENT" verbose="0">
   <test thread-count="5" name="C:/Users/lenovo/Downloads/SeleniumFrameworkDesign/PayO(failed)" verbose="0">
     <classes>
-      <class name="LoginTest">
+      <class name="Features.TestRunnerClass">
         <methods>
-          <include name="setup"/>
-          <include name="Login"/>
+          <include name="setUpClass"/>
+          <include name="runScenario" invocation-numbers="0 1 2"/>
+          <include name="tearDownClass"/>
         </methods>
-      </class> <!-- LoginTest -->
+      </class> <!-- Features.TestRunnerClass -->
     </classes>
   </test> <!-- C:/Users/lenovo/Downloads/SeleniumFrameworkDesign/PayO(failed) -->
 </suite> <!-- Failed suite [All Test Suite] -->

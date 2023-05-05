@@ -1,3 +1,5 @@
+package tests;
+
 import AbstractComponents.Baseclass;
 import AbstractComponents.WaitTime;
 import PageObject.LoginPage;
@@ -17,7 +19,7 @@ public class LoginTest  extends Baseclass {
 
     LoginPage loginPage=new LoginPage(driver);
 
-    @Test()
+
     public void Signup() throws InterruptedException {
 
         loginPage.getTextbox_name().sendKeys("Alex");
@@ -36,14 +38,7 @@ public class LoginTest  extends Baseclass {
         softassert.assertAll();
     }
 
-    @Test
-    public void Login(){
-        loginPage = new LoginPage(driver);
-        driver.get(Baseclass.baseURL+"login");
-        loginPage.getTxtMobileLoginPage().sendKeys("8149367129");
-        loginPage.getTxtPasswordLoginPage().sendKeys("admin@9214");
-        loginPage.getBtnLogin().click();
 
-    }
+
 
 }
